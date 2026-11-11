@@ -1,4 +1,5 @@
 # Estrutura Match Case 
+
 print('''
 [1] - Marketing
 [2] - financeiro 
@@ -16,9 +17,12 @@ match opcao:
         print('Você escolheu o setor Financeiro')
     case 3 | 4 | 5:
         print('Você escolheu o setor de Administração')
-    case 6 | 7 | 8 | 9:
+
+    case opcao if 6 <= opcao <= 9:
         print('Você escolheu o setor de TI')
-    case _ if opcao >= 10 and opcao <= 20:
+
+    case opcao if 10 <= opcao <= 20:
         print('Você escolheu o setor de Serviços Gerais')
+
     case _:
-        print('Setor inválido') 
+        print('Setor inválido')
