@@ -24,5 +24,6 @@ match opcao:
     case opcao if 10 <= opcao <= 20:
         print('Você escolheu o setor de Serviços Gerais')
 
+
     case _:
         print('Setor inválido')
