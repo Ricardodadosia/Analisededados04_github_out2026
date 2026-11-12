@@ -7,5 +7,5 @@ match numero:
     case numero if numero < 0:
         print("O número é negativo.")
 
-    case numero  if numero == 0:
+    case _:
         print("O número é zero.")
